@@ -1,0 +1,259 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover;
+    color: #fff; /* White text color for better visibility */
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(255, 255, 255, 0.8); /* White background with opacity */
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-cat a {
+    display: inline-block;
+}
+
+.logo-image {
+    height: 50px;
+    width: auto;
+}
+
+.menu-cat nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu-cat nav ul li {
+    margin-right: 20px;
+}
+
+.menu-cat nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.menu-cat nav ul li a:hover {
+    color: #f76c6c; /* Hover color */
+}
+
+/* Main Section Styles */
+main {
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+#about-us {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #fff; /* White text color */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #fff; /* White text color */
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Recipe Page Styles */
+#recipes {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#recipes h2 {
+    font-size: 2em;
+    color: #fff; /* White text color */
+    margin-bottom: 20px;
+}
+
+.recipe-item {
+    margin-bottom: 20px;
+}
+
+.recipe-item h3 {
+    font-size: 1.5em;
+    color: #fff; /* White text color */
+}
+
+.recipe-item p {
+    font-size: 1em;
+    color: #fff; /* White text color */
+}
+
+.recipe-item a {
+    text-decoration: none;
+    color: #f76c6c; /* Hover color for links */
+    font-weight: bold;
+}
+
+.recipe-item a:hover {
+    color: #ff8c8c; /* Lighter hover color */
+}
+
+/* Personalized Meal Plan Page Styles */
+#meal-plan {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#meal-plan h2 {
+    font-size: 2em;
+    color: #fff; /* White text color */
+    margin-bottom: 20px;
+}
+
+#meal-plan label {
+    font-size: 1.1em;
+    color: #fff; /* White text color */
+    margin-bottom: 10px;
+    display: block;
+}
+
+#meal-plan select,
+#meal-plan input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#meal-plan input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+#meal-plan input[type="submit"]:hover {
+    background-color: #f76c6c;
+}
+
+/* Contact Form Styles */
+#contact-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #f76c6c;
+}
+
+/* Login Form Styles */
+#login-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#login-form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+#login-form input[type="submit"]:hover {
+    background-color: #f76c6c;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-cat nav ul {
+        flex-direction: column;
+    }
+
+    .menu-cat nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meal Plan Creator</title>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo-cat">
+            <a href="index.html"><img alt="Healthy Foods Community" src="logo.jpg" class="logo-image" height="50" width="300"></a>
+        </div>
+        <div class="menu-cat">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Healthy Recipes</a></li>
+                    <li><a href="nutrition.html">Nutrition Insights</a></li>
+                    <li><a href="create-meal-plan.html">Meal Plan Creator</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                    <li><a href="logout.html">Log Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section id="meal-plan-form">
+        <h1>Create Your Personalized Meal Plan</h1>
+        <form id="meal-plan-form">
+            <label for="meal-type">Select Meal Type:</label>
+            <select id="meal-type" name="meal-type">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+            </select>
+            <br>
+            <label for="meal-preferences">Meal Preferences:</label>
+            <input type="text" id="meal-preferences" name="meal-preferences" placeholder="Enter preferences">
+            <br>
+            <input type="submit" value="Generate Meal Plan">
+        </form>
+    </section>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

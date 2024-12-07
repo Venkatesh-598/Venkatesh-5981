@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us</title>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo-cat">
+            <a href="index.html"><img alt="Healthy Foods Community" src="logo.jpg" class="logo-image" height="50" width="300"></a>
+        </div>
+        <div class="menu-cat">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Healthy Recipes</a></li>
+                    <li><a href="nutrition.html">Nutrition Insights</a></li>
+                    <li><a href="create-meal-plan.html">Meal Plan Creator</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                    <li><a href="logout.html">Log Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section id="contact-form">
+        <h1>Contact Us</h1>
+        <form id="contact-us-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            <br>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
